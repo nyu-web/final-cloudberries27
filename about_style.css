@@ -77,9 +77,8 @@ and (-webkit-device-pixel-ratio : 3) {
         font-size: 80px;
     }
 
-    .title h3 {
-        margin: 25px;
-        font-size: 20px;
+    .title h2 {
+        font-size: 30px;
     }
 
     img {
