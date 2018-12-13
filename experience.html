@@ -7,25 +7,8 @@
     <link rel="stylesheet" type="text/css" href="experience_style.css">
 </head>
 <body>
-<script>
-    (function() {
-
-        var hamburger = {
-            navToggle: document.querySelector('.nav-toggle'),
-            nav: document.querySelector('nav'),
-
-            doToggle: function(e) {
-                e.preventDefault();
-                this.navToggle.classList.toggle('expanded');
-                this.nav.classList.toggle('expanded');
-            }
-        };
-
-        hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-        hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-    }());
-</script>
+<script src="menu.js"></script>
+<script src="fade.js"></script>
 <header>
     <a href="index.html">
         <img alt="logo" src="img/WhiteLogo.png">
@@ -63,10 +46,10 @@
 
 <hr></hr>
 <section class="images">
-    <img src="img/gwcnyu%20logo.jpg" alt="gwcnyu">
-    <img src="img/VIP-01.jpg" alt="vip">
-    <img src="img/future%20stars.jpg" alt="future">
-    <img src="img/vs.jpg" alt="vs">
+    <img src="img/gwcnyu%20logo.jpg" alt="girls who code logo">
+    <img src="img/VIP-01.jpg" alt="v.i.p. logo">
+    <img src="img/future%20stars.jpg" alt="future stars summer camp logo">
+    <img src="img/vs.jpg" alt="victoria's secret logo">
 </section>
 <section class="extracurriculars">
     <h3> Experience/Extracurriculars: </h3>
