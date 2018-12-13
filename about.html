@@ -7,25 +7,8 @@
     <link rel="stylesheet" type="text/css" href="about_style.css">
 </head>
 <body>
-<script>
-    (function() {
-
-        var hamburger = {
-            navToggle: document.querySelector('.nav-toggle'),
-            nav: document.querySelector('nav'),
-
-            doToggle: function(e) {
-                e.preventDefault();
-                this.navToggle.classList.toggle('expanded');
-                this.nav.classList.toggle('expanded');
-            }
-        };
-
-        hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-        hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-    }());
-</script>
+<script src="menu.js"></script>
+<script src="fade.js"></script>
 <header>
     <a href="index.html">
         <img alt="logo" src="img/WhiteLogo.png">
@@ -47,7 +30,7 @@
 </header>
 <section class="title">
     <h1> Hiya! </h1>
-    <h3> My name is Claudia and I'm a junior studying Computer Science at the NYU Tandon School of Engineering </h3>
+    <h2> My name is Claudia and I'm a junior studying Computer Science at the NYU Tandon School of Engineering </h2>
 </section>
 
 <hr></hr>
@@ -61,12 +44,12 @@
             <li>Design and Analysis of Algorithms</li>
         </ul>
     </div>
-    <img src="https://media.giphy.com/media/SabSYEpsVh0di/giphy.gif" alt="algo">
+    <img src="https://media.giphy.com/media/SabSYEpsVh0di/giphy.gif" alt="gif of an algorithm">
 </section>
 
 <hr></hr>
 <section class="right">
-    <img src="https://media.giphy.com/media/tHIsvx5BRu1mE/giphy.gif" alt="french">
+    <img src="https://media.giphy.com/media/tHIsvx5BRu1mE/giphy.gif" alt="phoebe speak french to joey">
     <div>
         <h3> I know languages such as: </h3>
         <ul>
@@ -87,12 +70,12 @@
             <li>CyberSecurity</li>
         </ul>
     </div>
-    <img src="https://media.giphy.com/media/he8aSdri52ZnW/giphy.gif" alt="smart">
+    <img src="https://media.giphy.com/media/he8aSdri52ZnW/giphy.gif" alt="the office kelly being smart">
 </section>
 
 <hr></hr>
 <section class="right">
-    <img src="https://media.giphy.com/media/Tt9jctxaVjRny/giphy.gif" alt="tell">
+    <img src="https://media.giphy.com/media/Tt9jctxaVjRny/giphy.gif" alt="tell me more chocolate factory gif">
     <div>
         <h3> Things I Like To Do: </h3>
         <ul>
