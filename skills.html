@@ -7,25 +7,8 @@
     <link rel="stylesheet" type="text/css" href="skills_style.css">
 </head>
 <body>
-<script>
-    (function() {
-
-        var hamburger = {
-            navToggle: document.querySelector('.nav-toggle'),
-            nav: document.querySelector('nav'),
-
-            doToggle: function(e) {
-                e.preventDefault();
-                this.navToggle.classList.toggle('expanded');
-                this.nav.classList.toggle('expanded');
-            }
-        };
-
-        hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-        hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-    }());
-</script>
+<script src="menu.js"></script>
+<script src="fade.js"></script>
 <header>
     <a href="index.html">
         <img alt="logo" src="img/WhiteLogo.png">
@@ -74,9 +57,9 @@
 <section class="text">
     <h3> I know the following ADOBE programs: </h3>
     <div class="images">
-        <img src="img/dreamweaver.png" alt="dream">
-        <img src="img/illustrator.png" alt="illu">
-        <img src="img/photosho.png" alt="photo">
+        <img src="img/dreamweaver.png" alt="dreamweaver">
+        <img src="img/illustrator.png" alt="illustrator">
+        <img src="img/photosho.png" alt="photoshop">
     </div>
 </section>
 
@@ -85,7 +68,7 @@
     <h3> I know the following IDE's: </h3>
     <div class="images">
         <img src="img/spyder.png" alt="spyder">
-        <img src="img/visual.png" alt="visual">
+        <img src="img/visual.png" alt="visual studio">
         <img src="img/pycharm.png" alt="pycharm">
         <img src="img/eclipse.png" alt="eclipse">
     </div>
