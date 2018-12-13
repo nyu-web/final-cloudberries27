@@ -1,3 +1,4 @@
+@import "index_style.css";
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -9,41 +10,14 @@
 
 html{
     background: linear-gradient(to bottom left, orange, forestgreen);
-    background-repeat: no-repeat;
-    background-size:100%;
+
 }
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-family: Roboto,sans-serif;
-    font-weight: normal;
+    margin-bottom: 0;
 }
-
-header img{
-    height:50px;
-    width:200px;
-    padding: 20px;
-}
-nav ul{
-    list-style-type: none;
-    text-align: center;
-    float: right;
-}
-nav ul li{
-    display: inline-block;
-}
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    width: 120px;
+section{
     display: block;
-    text-align: center;
-    padding: 20px 0;
-}
-li a:hover{
-    border-bottom: 2px solid #fff;
-    transition: 0.5s;
+    padding-left: 0;
 }
 h1{
     text-align: center;
@@ -158,92 +132,5 @@ and (-webkit-device-pixel-ratio : 3){
     .social-icons{
         flex-wrap:wrap;
         margin:0px 50px;
-    }
-    .nav-toggle {
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        cursor: pointer;
-        height: 2rem;
-        right: 2rem;
-        position: fixed;
-        top: 2rem;
-        width: 3.6rem;
-        z-index: 2;
-    }
-
-    .nav-toggle:hover { opacity: 0.8; }
-
-    .nav-toggle .nav-toggle-bar,  .nav-toggle .nav-toggle-bar::after,  .nav-toggle .nav-toggle-bar::before {
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        background: white;
-        content: '';
-        height: 0.4rem;
-        width: 100%;
-    }
-
-    .nav-toggle .nav-toggle-bar { margin-top: 0; }
-
-    .nav-toggle .nav-toggle-bar::after { margin-top: 0.8rem; }
-
-    .nav-toggle .nav-toggle-bar::before { margin-top: -0.8rem; }
-
-    .nav-toggle.expanded .nav-toggle-bar { background: transparent; }
-
-    .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
-        background: white;
-        margin-top: 0;
-    }
-
-    .nav-toggle.expanded .nav-toggle-bar::after {
-        -ms-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-
-    .nav-toggle.expanded .nav-toggle-bar::before {
-        -ms-transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-    }
-
-    .nav {
-        -webkit-transition: left 0.5s ease;
-        -moz-transition: left 0.5s ease;
-        -o-transition: left 0.5s ease;
-        transition: left 0.5s ease;
-        background: black;
-        color: white;
-        cursor: pointer;
-        font-size: 20px;
-        font-weight: lighter;
-        height: 100vh;
-        right: -20rem;
-        padding: 6rem 2rem 2rem 2rem;
-        position: fixed;
-        top: 0;
-        width: 10rem;
-        z-index: 1;
-    }
-
-    .nav.expanded { right: 0; }
-
-    .nav ul {
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        list-style: none;
-        margin: 0;
-        padding: 0;
     }
 }
