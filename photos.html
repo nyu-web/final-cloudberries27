@@ -6,27 +6,12 @@
           content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" type="text/css" href="photos_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-<script>
-    (function() {
-
-        var hamburger = {
-            navToggle: document.querySelector('.nav-toggle'),
-            nav: document.querySelector('nav'),
-
-            doToggle: function(e) {
-                e.preventDefault();
-                this.navToggle.classList.toggle('expanded');
-                this.nav.classList.toggle('expanded');
-            }
-        };
-
-        hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-        hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-    }());
-</script>
+<script src="menu.js"></script>
+<script src="fade.js"></script>
 <header>
     <a href="index.html">
         <img alt="logo" src="img/WhiteLogo.png" class="logo">
@@ -50,7 +35,11 @@
 <section class="title">
     <h1>Photo Gallery</h1>
 </section>
-
+<section id="images" class="gallery"></section>
+<section id="modal" class="hidden">
+    <i class="fa fa-arrow-circle-o-left arrow left" id="leftArrow"></i>
+    <i class="fa fa-arrow-circle-o-right arrow right" id="rightArrow"></i>
+</section>
 <script src="photos.js"></script>
 </body>
 </html>
