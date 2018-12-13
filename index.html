@@ -2,38 +2,16 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claudia Rodriguez</title>
     <link rel="stylesheet" type="text/css" href="index_style.css">
 </head>
 <body>
-<script>
-    (function() {
-
-        var hamburger = {
-            navToggle: document.querySelector('.nav-toggle'),
-            nav: document.querySelector('nav'),
-
-            doToggle: function(e) {
-                e.preventDefault();
-                this.navToggle.classList.toggle('expanded');
-                this.nav.classList.toggle('expanded');
-            }
-        };
-
-        hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-        hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-    }());
-</script>
-<script>
-    document.body.className += 'fade-out';
-    window.onload = function () { document.body.className = ""; }
-</script>
+<script src="menu.js"></script>
+<script src="fade.js"></script>
 <header>
     <a href="index.html">
-        <img alt="logo" src="img/WhiteLogo.png">
+        <img alt="this is my logo" src="img/WhiteLogo.png">
     </a>
     <div class="nav-toggle">
         <div class="nav-toggle-bar">
@@ -50,21 +28,20 @@
         </ul>
     </nav>
 </header>
-<img src="https://img.icons8.com/ios/1600/user-female-circle-filled.png" alt="pic" class="profile">
+<img src="https://img.icons8.com/ios/1600/user-female-circle-filled.png" alt="not a real picture just an icon" class="profile">
 <section>
     <h1> Claudia  Rodriguez </h1>
-    <h3> Programmer | Graphic Designer </h3>
+    <h2> Programmer | Graphic Designer </h2>
 </section>
-
 <footer>
     <a href="https://www.linkedin.com/in/claudiarodriguez2298">
-        <img alt="in" src="https://img.icons8.com/metro/1600/linkedin.png">
+        <img alt="go to my linkedin" src="https://img.icons8.com/metro/1600/linkedin.png">
     </a>
     <a href="https://www.facebook.com/profile.php?id=100003481394702">
-        <img alt="fb" src="https://img.icons8.com/metro/1600/facebook.png">
+        <img alt="go to my facebook" src="https://img.icons8.com/metro/1600/facebook.png">
     </a>
     <a href="https://github.com/cloudberries27">
-        <img alt="fb" src="https://img.icons8.com/metro/1600/github.png">
+        <img alt="go to my github" src="https://img.icons8.com/metro/1600/github.png">
     </a>
 </footer>
 </body>
